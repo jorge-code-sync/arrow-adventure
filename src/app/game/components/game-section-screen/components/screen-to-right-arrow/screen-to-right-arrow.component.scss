@@ -1,0 +1,35 @@
+:host {
+  z-index: 8;
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 11%;
+  left: 27%;
+  transform: scale(2);
+  animation: toRightAnimation 1.5s linear infinite;
+  visibility: hidden;
+  animation-delay: 500ms;
+}
+
+@keyframes toRightAnimation {
+  0% {
+    visibility: hidden;
+  }
+  39% {
+    visibility: hidden;
+  }
+  40% {
+    left: 27%;
+    visibility: visible;
+    border: 0;
+  }
+  60% {
+    left: 73%;
+    visibility: visible;
+  }
+  61% {
+    visibility: hidden;
+  }
+}

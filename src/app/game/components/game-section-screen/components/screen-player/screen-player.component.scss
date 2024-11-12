@@ -1,0 +1,90 @@
+:host {
+  z-index: 8;
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 20%;
+  left: 20%;
+  transform: scale(2);
+
+  background-image: url("/images/game/characters/player/player_tileset.png");
+  background-size: 832px 1344px;
+
+  &[player-state="state-attack"] {
+    animation: attackAnimation 1.5s steps(12) infinite;
+  }
+  &[player-state="state-idle"] {
+    animation: idleAnimation 1s steps(1) infinite;
+  }
+  &[player-state="state-walk"] {
+    animation: walkAnimation 1s steps(9) infinite;
+  }
+  &[player-state="state-die"] {
+    animation: dieAnimation 600ms steps(5) forwards;
+  }
+}
+
+.health-bar-container {
+  position: absolute;
+  top: 4%;
+  height: 6px;
+  left: 10%;
+  width: 80%;
+  z-index: 9;
+  background-color: #333;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  overflow: hidden;
+  .health-bar {
+    width: 100%;
+    height: 100%;
+    background: rgb(107, 120, 12);
+    background: linear-gradient(
+      137deg,
+      rgba(107, 120, 12, 1) 0%,
+      rgba(86, 135, 15, 1) 33%,
+      rgba(80, 195, 25, 1) 63%,
+      rgba(33, 80, 5, 1) 100%
+    );
+  }
+}
+
+@keyframes idleAnimation {
+  from {
+    background-position: 0 128px;
+  }
+  to {
+    background-position: -64px 128px;
+  }
+}
+
+@keyframes attackAnimation {
+  from {
+    background-position: 0 128px;
+  }
+  to {
+    background-position: -768px 128px;
+  }
+}
+
+@keyframes walkAnimation {
+  from {
+    background-position: 0 640px;
+  }
+  to {
+    background-position: -574px 640px;
+  }
+}
+
+@keyframes dieAnimation {
+  from {
+    background-position: 0 64px;
+    bottom: 20%;
+  }
+  to {
+    background-position: -324px 64px;
+    bottom: 9%;
+  }
+}

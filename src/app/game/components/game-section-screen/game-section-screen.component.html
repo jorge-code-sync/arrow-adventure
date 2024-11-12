@@ -1,0 +1,23 @@
+<screen-background />
+
+@if(player() ){
+<screen-player />
+<screen-player-damage />
+} @if(enemy() ){ @if(player()?.state === 'attack'){
+<screen-to-right-arrow />
+} } @if(enemy() && game()?.state === 'playing' ){
+<screen-enemy />
+<screen-enemy-damage />
+@if(enemy()?.state === 'attack'){
+<screen-to-left-arrow />
+} } @if(game()?.state === 'start'){
+<div class="button-start-container">
+  <button class="button-start" (click)="startGame()">Start Game</button>
+</div>
+} @if(game()?.state === 'end'){
+<div class="button-end-container">
+  <h1>Game Over</h1>
+  <h2>Score: {{ game()?.stage }}</h2>
+  <button class="button-end" (click)="tryAgain()">Try again</button>
+</div>
+}

@@ -1,0 +1,5 @@
+@if(lastDamage()){
+<div class="damage-element" [ngClass]="{ 'is-heal': isHeal() }">
+  {{ lastDamage() | number : "1.0-0" }}
+</div>
+}

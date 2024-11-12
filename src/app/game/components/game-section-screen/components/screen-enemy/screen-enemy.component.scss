@@ -1,0 +1,79 @@
+:host {
+  z-index: 8;
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 20%;
+  right: 20%;
+  transform: scale(2.2);
+
+  background-image: url("/images/game/characters/enemy/enemy_tileset.png");
+  background-size: 832px 1344px;
+  background-position: 0 256px;
+
+  animation: appearAnimation 1s linear forwards;
+
+  &[enemy-state="state-attack"] {
+    animation: attackAnimation 1.5s steps(12) infinite;
+  }
+
+  &[enemy-state="state-die"] {
+    animation: dieAnimation 600ms steps(5) forwards;
+  }
+}
+
+@keyframes appearAnimation {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 20%;
+  }
+}
+
+@keyframes attackAnimation {
+  from {
+    background-position: 0 256px;
+  }
+  to {
+    background-position: -768px 256px;
+  }
+}
+
+@keyframes dieAnimation {
+  from {
+    background-position: 0 64px;
+    bottom: 20%;
+  }
+  to {
+    background-position: -324px 64px;
+    bottom: 9%;
+  }
+}
+
+.health-bar-container {
+  position: absolute;
+  top: 4%;
+  height: 6px;
+  left: 15%;
+  width: 70%;
+  z-index: 9;
+  background-color: #333;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  overflow: hidden;
+  .health-bar {
+    width: 100%;
+    height: 100%;
+    background: rgb(217, 139, 20);
+    background: linear-gradient(
+      137deg,
+      rgba(217, 139, 20, 1) 0%,
+      rgba(198, 90, 27, 1) 33%,
+      rgba(195, 45, 25, 1) 63%,
+      rgba(80, 5, 5, 1) 100%
+    );
+  }
+}

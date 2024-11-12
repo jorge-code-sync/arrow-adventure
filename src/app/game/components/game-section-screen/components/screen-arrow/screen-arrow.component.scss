@@ -1,0 +1,21 @@
+:host {
+  z-index: 8;
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 11%;
+  left: 27%;
+  transform: scale(2);
+  animation: toRightAnimation 1s linear forwards;
+}
+
+@keyframes toRightAnimation {
+  from {
+    left: 27%;
+  }
+  to {
+    left: 73%;
+  }
+}

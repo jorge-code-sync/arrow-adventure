@@ -1,0 +1,39 @@
+:host {
+  position: absolute;
+  left: 22%;
+  bottom: 35%;
+  z-index: 50;
+}
+
+.damage-element {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #960909;
+  position: relative;
+  animation: toUpAnimation 450ms linear forwards;
+  bottom: 5rem;
+
+  text-shadow: 2px 0 #dda5a5, -2px 0 #dda5a5, 0 2px #dda5a5, 0 -2px #dda5a5,
+    1px 1px #dda5a5, -1px -1px #dda5a5, 1px -1px #dda5a5, -1px 1px #dda5a5;
+
+  &.is-heal {
+    color: #3a9609;
+    text-shadow: 2px 0 #b9dda5, -2px 0 #b9dda5, 0 2px #b9dda5, 0 -2px #b9dda5,
+      1px 1px #b9dda5, -1px -1px #b9dda5, 1px -1px #b9dda5, -1px 1px #b9dda5;
+  }
+}
+
+@keyframes toUpAnimation {
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 5rem;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
