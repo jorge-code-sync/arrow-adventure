@@ -1,5 +1,11 @@
 # Arrow Adventure
 
+Arrow Adventure is a small project for a mini-game. The interesting part of this project is that it is built using NgRx effects without using any Angular services. It serves as a small test to explore the capabilities and patterns of state management in Angular applications.
+
+![Arrow Adventure Preview](https://i.imghippo.com/files/sBg7313Fl.png)
+
+# Angular default md
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
 ## Development server
