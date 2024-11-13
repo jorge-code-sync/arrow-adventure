@@ -108,13 +108,14 @@
           transform: scale(1.5);
 
           &.basic-potion {
-            background-image: url("images/game/items/basic_potion.png");
+            background-image: url("../../../../../public/images/game/items/basic_potion.png");
             background-size: 128px 16px;
             animation: potionAnimation 0.5s steps(8) infinite;
           }
 
           &.full-potion {
-            background-image: url("images/game/items/full_potion.png");
+            background-image: url("../../../../../public/images/game/items/full_potion.png");
+
             background-size: 128px 16px;
             animation: potionAnimation 0.5s steps(8) infinite;
           }

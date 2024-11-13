@@ -9,7 +9,7 @@
   left: 20%;
   transform: scale(2);
 
-  background-image: url("images/game/characters/player/player_tileset.png");
+  background-image: url("../../../../../../../public/images/game/characters/player/player_tileset.png");
   background-size: 832px 1344px;
 
   &[player-state="state-attack"] {
