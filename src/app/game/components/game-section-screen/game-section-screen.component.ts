@@ -42,11 +42,7 @@ export class GameSectionScreenComponent implements OnInit {
   player = signal<PlayerModel | undefined>(undefined);
   enemy = signal<EnemyModel | undefined>(undefined);
 
-  constructor(private store: Store<AppState>) {
-    effect(() => {
-      console.log(this.enemy());
-    });
-  }
+  constructor(private store: Store<AppState>) {}
 
   ngOnInit(): void {
     this.store.select('game').subscribe((game: GameModel) => {

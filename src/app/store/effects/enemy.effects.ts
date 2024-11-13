@@ -45,8 +45,7 @@ export class EnemyEffects {
           return of(enemyActions.setEnemyState({ state: 'die' }));
         }
         return of();
-      }),
-      tap(() => console.log('Enemy receive damage'))
+      })
     )
   );
 
@@ -83,8 +82,7 @@ export class EnemyEffects {
               of(enemyActions.destroyEnemy()).pipe(delay(1200))
             )
           : of()
-      ),
-      tap(() => console.log('Enemy destroy'))
+      )
     )
   );
 

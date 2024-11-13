@@ -21,11 +21,7 @@ export class PlayerEffects {
   constructor(private actions$: Actions, private store: Store<AppState>) {}
 
   createPlayer$ = createEffect(
-    () =>
-      this.actions$.pipe(
-        ofType(playerActions.createPlayer),
-        tap(() => console.log('Player created!'))
-      ),
+    () => this.actions$.pipe(ofType(playerActions.createPlayer)),
     { dispatch: false }
   );
 
@@ -59,8 +55,7 @@ export class PlayerEffects {
           return of(playerActions.setPlayerState({ state: 'die' }));
         }
         return of();
-      }),
-      tap(() => console.log('Player receive damage'))
+      })
     )
   );
 
@@ -74,8 +69,7 @@ export class PlayerEffects {
               of(enemyActions.destroyEnemy())
             )
           : of()
-      ),
-      tap(() => console.log('Player destroy'))
+      )
     )
   );
 }

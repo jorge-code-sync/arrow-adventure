@@ -35,8 +35,7 @@ export class GameEffects {
         action.state === 'playing'
           ? of(playerActions.setPlayerState({ state: 'walk' }))
           : of()
-      ),
-      tap(() => console.log('Game started!'))
+      )
     )
   );
 
@@ -47,8 +46,7 @@ export class GameEffects {
         action.state === 'end'
           ? of(enemyActions.setEnemyState({ state: 'idle' }))
           : of()
-      ),
-      tap(() => console.log('Game ended!'))
+      )
     )
   );
 
@@ -58,8 +56,7 @@ export class GameEffects {
       withLatestFrom(this.store.select('game')),
       mergeMap(([action, gameStage]) =>
         of(enemyActions.createEnemy({ difficulty: gameStage.stage }))
-      ),
-      tap(() => console.log('Game ended!'))
+      )
     )
   );
 }

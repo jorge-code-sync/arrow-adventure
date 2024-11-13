@@ -4,6 +4,8 @@ Arrow Adventure is a small project for a mini-game. The interesting part of this
 
 ![Arrow Adventure Preview](https://i.imghippo.com/files/sBg7313Fl.png)
 
+[![LinkedIn](https://img.shields.io/badge/Play%20Game-%230077B5.svg?logo=applearcade&logoColor=white)](https://jorge-code-sync.github.io/arrow-adventure/)
+
 # Angular default md
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
