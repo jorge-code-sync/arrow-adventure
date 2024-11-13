@@ -36,7 +36,7 @@ export class GameSectionAttributesComponent {
       },
       potion: {
         basic: (this.player()?.gold ?? 0) < 6,
-        full: (this.player()?.gold ?? 0) < 60,
+        full: (this.player()?.gold ?? 0) < 24,
       },
     };
   });
