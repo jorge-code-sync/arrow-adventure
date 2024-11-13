@@ -4,52 +4,49 @@
   <div>Gold</div>
   <div class="gold-coins">
     <span> {{ player()?.gold }} </span>
-    <img
-      class="sword"
-      src="../../../../../public/images/game/items/sword.png"
-    />
+    <img class="sword" src="images/game/items/sword.png" />
   </div>
 </div>
 <div class="player-attribute">
-  <div>Power (2<img class="sword" src="/images/game/items/coin.png" />)</div>
+  <div>Power (2<img class="sword" src="images/game/items/coin.png" />)</div>
   <div>
     <button
       (click)="increaseAttribute('power', 1, 2)"
       [ngClass]="{ disabled: buttonDisabled().power.one }"
     >
       <span>{{ player()?.attributes?.powerPoints }}</span>
-      <img class="sword" src="/images/game/items/sword.png" />
+      <img class="sword" src="images/game/items/sword.png" />
     </button>
     <button
       (click)="increaseAttribute('power', 10, 20)"
       [ngClass]="{ disabled: buttonDisabled().power.ten }"
     >
-      <img class="sword" src="/images/game/items/sword.png" />
+      <img class="sword" src="images/game/items/sword.png" />
       <span>x10</span>
     </button>
   </div>
 </div>
 <div class="player-attribute">
-  <div>Shield (4<img class="sword" src="/images/game/items/coin.png" />)</div>
+  <div>Shield (4<img class="sword" src="images/game/items/coin.png" />)</div>
   <div>
     <button
       (click)="increaseAttribute('shield', 1, 4)"
       [ngClass]="{ disabled: buttonDisabled().shield.one }"
     >
       <span>{{ player()?.attributes?.shieldPoints }}</span>
-      <img class="shield" src="/images/game/items/shield.png" />
+      <img class="shield" src="images/game/items/shield.png" />
     </button>
     <button
       (click)="increaseAttribute('shield', 10, 40)"
       [ngClass]="{ disabled: buttonDisabled().shield.ten }"
     >
-      <img class="shield" src="/images/game/items/shield.png" />
+      <img class="shield" src="images/game/items/shield.png" />
       <span>x10</span>
     </button>
   </div>
 </div>
 <div class="player-attribute">
-  <div>Potion (6<img class="sword" src="/images/game/items/coin.png" />)</div>
+  <div>Potion (6<img class="sword" src="images/game/items/coin.png" />)</div>
   <div>
     <button
       (click)="usePotion(10, 6)"

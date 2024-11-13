@@ -29,48 +29,48 @@ div {
 
 .bg-layer-1 {
   z-index: 1;
-  background-image: url("/images/game/backgrounds/parallax_bg_1.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_1.webp");
   animation: parallaxBgAnimation 20s linear infinite;
 }
 
 .bg-layer-2 {
   z-index: 2;
-  background-image: url("/images/game/backgrounds/parallax_bg_2.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_2.webp");
   animation: parallaxBgAnimation 16s linear infinite;
   background-position: 0 220%;
 }
 
 .bg-layer-3 {
   z-index: 3;
-  background-image: url("/images/game/backgrounds/parallax_bg_3.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_3.webp");
   animation: parallaxBgAnimation 14s linear infinite;
   background-position: 0 130%;
 }
 
 .bg-layer-4 {
   z-index: 4;
-  background-image: url("/images/game/backgrounds/parallax_bg_4.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_4.webp");
   animation: parallaxBgAnimation 12s linear infinite;
   background-position: 0 180%;
 }
 
 .bg-layer-5 {
   z-index: 5;
-  background-image: url("/images/game/backgrounds/parallax_bg_5.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_5.webp");
   animation: parallaxBgAnimation 10s linear infinite;
   background-position: 0 70%;
 }
 
 .bg-layer-6 {
   z-index: 6;
-  background-image: url("/images/game/backgrounds/parallax_bg_6.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_6.webp");
   animation: parallaxBgAnimation 8s linear infinite;
   background-position: 0 -50%;
 }
 
 .bg-layer-7 {
   z-index: 99;
-  background-image: url("/images/game/backgrounds/parallax_bg_7.webp");
+  background-image: url("images/game/backgrounds/parallax_bg_7.webp");
   animation: parallaxBgAnimation 6s linear infinite;
   background-position: 0 80%;
 }
