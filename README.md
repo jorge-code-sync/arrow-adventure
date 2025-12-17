@@ -2,7 +2,7 @@
 
 Arrow Adventure is a small project for a mini-game. The interesting part of this project is that it is built using NgRx effects without using any Angular services. It serves as a small test to explore the capabilities and patterns of state management in Angular applications.
 
-![Arrow Adventure Preview](https://i.imghippo.com/files/sBg7313Fl.png)
+![Arrow Adventure Preview](https://i.postimg.cc/sgg06KJ8/arrow-adventure.png)
 
 [![LinkedIn](https://img.shields.io/badge/Play%20Game-%230077B5.svg?logo=applearcade&logoColor=white)](https://jorge-code-sync.github.io/arrow-adventure/)
 
